@@ -41,6 +41,11 @@ After calculating the probabilities for each of these outcomes, we simply multip
 ### Calculation
 For detail analysis please refer to [probability.ipynb](https://github.com/quantumsnowball/marble_drawing_scam_analysis/blob/master/probability.ipynb) and [original.py](https://github.com/quantumsnowball/marble_drawing_scam_analysis/blob/master/original.py)
 
+## Simulation
+There is another way to get the probabilities for all cases, and it is by simulation. Please refer to [simulation.ipynb](https://github.com/quantumsnowball/marble-drawing-scam-analysis/blob/master/simulation.ipynb) for details.
+
+## Conclusion
+As proved in [probability.ipynb](https://github.com/quantumsnowball/marble-drawing-scam-analysis/blob/master/probability.ipynb), on average the player is lossing 12 dollars on every play. Clearly this game is a scam. This is because the player is having close to 49% of getting case `543` which corresponds to a punishment of $30. Although in some cases player may win more $100 - $300, but these are extremely rare cases. Without indepth calculation, the player may think that these events are equally likely to occure, but we have shown that this is far from being true. It is this huge difference in perception which makes this game a scam.
 
 ## Improvement on the Game
 While the reward levels for this game may not be on a very good setting, thus it is possible to fine tune the rewards to make this game more interesting and exciting.
