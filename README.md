@@ -32,8 +32,15 @@ The `543` case corresponds to a negative number, meaning that when the result ma
 ## Probability
 As this game has very clear finite outcomes in its probability spaces, we can easily calculate the probabilities of each of these payoff cases, which should sum up to 1.
 
+### Calculation
+For detail analysis please refer to [probability.ipynb](https://github.com/quantumsnowball/marble_drawing_scam_analysis/blob/master/probability.ipynb) and [original.py](https://github.com/quantumsnowball/marble_drawing_scam_analysis/blob/master/original.py)
+
 ## Expected Rewards
 After calculating the probabilities for each of these outcomes, we simply multiple the payoffs to get the expected rewards for each outome, and sum them up to get the average reward for playing this game. Player's expected rewards can be calculated by subtracting the average cost of playing the game from the expected reward. Then we can judge if this is a fair game or not.
+
+### Calculation
+For detail analysis please refer to [probability.ipynb](https://github.com/quantumsnowball/marble_drawing_scam_analysis/blob/master/probability.ipynb) and [original.py](https://github.com/quantumsnowball/marble_drawing_scam_analysis/blob/master/original.py)
+
 
 ## Improvement on the Game
 While the reward levels for this game may not be on a very good setting, thus it is possible to fine tune the rewards to make this game more interesting and exciting.
