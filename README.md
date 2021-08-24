@@ -48,4 +48,13 @@ There is another way to get the probabilities for all cases, and it is by simula
 As proved in [probability.ipynb](https://github.com/quantumsnowball/marble-drawing-scam-analysis/blob/master/probability.ipynb), on average the player is lossing 12 dollars on every play. Clearly this game is a scam. This is because the player is having close to 49% of getting case `543` which corresponds to a punishment of $30. Although in some cases player may win more $100 - $300, but these are extremely rare cases. Without indepth calculation, the player may think that these events are equally likely to occure, but we have shown that this is far from being true. It is this huge difference in perception which makes this game a scam.
 
 ## Improvement on the Game
-While the reward levels for this game may not be on a very good setting, thus it is possible to fine tune the rewards to make this game more interesting and exciting.
+While the reward levels for this game may not be on a very good setting, thus it is possible to fine tune the rewards to make this game more interesting and exciting. The biggest problem is that the player of the original game tend to lose money very quickly. He will soon realize that there is something wrong with this game. Soon he will quit the game with or without know the real reason.
+
+### Re-designing the game
+If we are going to improve this game, I will propose the following improvement:
+1. Avoid punishing the player by removing the negative reward case
+2. Let the player have the feeling of winning big if he doesn't know the real probabilities
+3. Adjust the fee of the game to keep an overall positive expected return for the house
+
+### Implementation
+Detail implementation of the re-designed game is documentated in [new_game_3_colors.ipynb](https://github.com/quantumsnowball/marble-drawing-scam-analysis/blob/master/new_game_3_colors.ipynb) and [game.py](https://github.com/quantumsnowball/marble-drawing-scam-analysis/blob/master/game.py)
