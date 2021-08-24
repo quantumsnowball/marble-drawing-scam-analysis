@@ -57,4 +57,4 @@ If we are going to improve this game, I will propose the following improvement:
 3. Adjust the fee of the game to keep an overall positive expected return for the house
 
 ### Implementation
-Detail implementation of the re-designed game is documentated in [new_game_3_colors.ipynb](https://github.com/quantumsnowball/marble-drawing-scam-analysis/blob/master/new_game_3_colors.ipynb) and [game.py](https://github.com/quantumsnowball/marble-drawing-scam-analysis/blob/master/game.py)
+Detail implementation of the re-designed game is documentated in [new_game_3_colors.ipynb](https://github.com/quantumsnowball/marble-drawing-scam-analysis/blob/master/new_game_3_colors.ipynb) and [game.py](https://github.com/quantumsnowball/marble-drawing-scam-analysis/blob/master/game.py). As the implementaion is generic, you can also create a completely different version of the game. E.g. you can incresae the total number of color and create a 4-colors marble drawing game as shown in [new_game_4_colors.ipynb](https://github.com/quantumsnowball/marble-drawing-scam-analysis/blob/master/new_game_4_colors.ipynb)
