@@ -11,7 +11,7 @@ One day my friend sent me the follow image and ask if this gambling game is even
 2. Count the number of marbles that belong to each of the 3 color, then arrange the counts in descending order
 3. Receive the corresponding rewards according to the payoff table
 ```python
-payoffs = {
+rewards = {
     '840': +300,
     '831': +100,
     '822': +120,
@@ -55,6 +55,26 @@ If we are going to improve this game, I will propose the following improvement:
 1. Avoid punishing the player by removing the negative reward case
 2. Let the player have the feeling of winning big if he doesn't know the real probabilities
 3. Adjust the fee of the game to keep an overall positive expected return for the house
+
+### New Rewards
+```python
+rewards={
+    '543': 1, 
+    '444': 2, 
+    '642': 4, 
+    '633': 8, 
+    '552': 16, 
+    '732': 32, 
+    '651': 64, 
+    '741': 128, 
+    '831': 256, 
+    '750': 512, 
+    '822': 1024, 
+    '660': 2048, 
+    '840': 4096
+},
+```
+We have removed the negative punishment case and make it pay a $1 rewards, the player will feel better since he is guaranteed to collect rewards everytime. We also increase the maximum reward for the very rare cases. This will give the player an illusion that he can win big sometimes, but in fact this happen far less likely than he can imagine.
 
 ### Implementation
 Detail implementation of the re-designed game is documentated in [new_game_3_colors.ipynb](https://github.com/quantumsnowball/marble-drawing-scam-analysis/blob/master/new_game_3_colors.ipynb) and [game.py](https://github.com/quantumsnowball/marble-drawing-scam-analysis/blob/master/game.py). As the implementaion is generic, you can also create a completely different version of the game. E.g. you can incresae the total number of color and create a 4-colors marble drawing game as shown in [new_game_4_colors.ipynb](https://github.com/quantumsnowball/marble-drawing-scam-analysis/blob/master/new_game_4_colors.ipynb)
